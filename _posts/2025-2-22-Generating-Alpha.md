@@ -17,16 +17,23 @@ author: Rachael
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+Project 1: Maze Navigation Robot
+My first big project was programming a VEX robot to autonomously drive through a maze — no human control, just pure code. I wrote a driving function called JiasdrivingCode() that told the robot exactly how far to drive forward and when to turn left or right, using a series of driveFor and turnFor commands measured in inches and degrees. The robot also had a lift mechanism controlled by amlift.spinFor, which helped it interact with elements along the course.
+Alongside the driving code, my teammate Manushri designed a screen display for the robot's brain — a red rectangle with a diagonal line and a cheerful "hi there!! <3" message printed on screen. It was a fun way to give our robot some personality while it navigated!
 
-In this project, I dove into a deep exploration of quantitative trading strategies with a primary focus on alpha generation. The core of the project was to contrust a robust trading system that leverages advanced statistical models and machine learning techniques to uncover and exploit predictive signals in financial markets. This involved defininig a liquid universe of stocks, performinig intrincate factor analysis, and employing optimization algorithms to refine the trading strategies. 
 
-The project workflow is comprised of these distinct stages:
-1. Universe Data Collection
-2. Alpha Factors
-3. Factor Analysis
-4. Factors Combination
-5. Optimized Alpha Vector Portfolio
-6. Conclusions for Intraday Trading
+Project 2: Three Themes Screen Design
+This was one of my favorite challenges — designing three completely different animated scenes to display on the VEX Brain's small screen. Each theme had its own visual style and animation logic.
+🌃 Starry Night
+The starry night scene draws a black background, a crescent moon made from two overlapping yellow and black circles, and a field of white star dots scattered across the sky. On top of that, I animated a shooting star that moves across the screen from left to right, leaving a yellow trail behind it using the nightsky() function with a while loop.
+🚕 Car Design
+The car scene features an orange car driving across a blue sky and black road. The car body is built from three overlapping rectangles and two circles for wheels, and the whole thing moves horizontally using a carx variable that increments in the while loop — giving the illusion of motion. I even added Brain.playSound(headlightsOn) for some extra flair.
+🎂 Birthday Cake
+The birthday cake was the most technical screen design — I used a massive pixel coordinate list (int list[6989][2]) to draw a detailed cake image pixel by pixel on the screen, then printed "Happy Birthday!<3" in mono15 font underneath. Plotting thousands of individual points to form an image taught me a lot about how graphics rendering actually works at a low level.
+☁️ Cloud
+Similar to the birthday cake, the cloud scene uses a hand-mapped list of 1,128+ pixel coordinates to draw a detailed cloud outline on a white background. The coordinates trace the outer contour of the cloud shape, and a for loop renders each pixel one at a time.
+The three themes were connected through button inputs: pressing the left button triggered the car animation and pressing the right button launched the birthday cake scene.
+
 
 
 In this context, we have used different source of data provided from Sharadar and IFT as described below:

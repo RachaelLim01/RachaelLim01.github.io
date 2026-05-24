@@ -1,5 +1,5 @@
 ---
-date: 2025-05-23 12:00:00
+date: 2026-04-01 12:00:00
 layout: post
 title: "Uber Incrementality Measurement Platform"
 subtitle: "Causal Inference for Marketing Science"
